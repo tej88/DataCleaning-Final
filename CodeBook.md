@@ -36,25 +36,74 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ##Variables
 
-* testData - table contents of test/X_test.txt
-* trainData - table contents of train/X_train.txt
-* X - Measurement data. Combined data set of the two above variables
-* testSub - table contents of test/subject_test.txt
-* trainSub - table contents of test/subject_train.txt
-* S - Subjects. Combined data set of the two above variables
-* testLabel - table contents of test/y_test.txt
-* trainLabel - table contents of train/y_train.txt
-* Y - Data Labels. Combined data set of the two above variables.
-* featuresList - table contents of features.txt
-* features - Names of for data columns derived from featuresList
-* keepColumns - logical vector of which features to use in tidy data set
-* activities - table contents of activity_labels.txt. Human readable
-* tidyData - subsetted, human-readable data ready for output according to project description.
-* uS - unique subjects from S
-* nS - number of unique subjects
-* nA - number of activities
-* nC - number of columns in tidyData
-* td - second tiny data set with average of each variable for each activity and subject
+* activities	The activity performed
+* subject	Subject ID
+* tbodyacc-mean-x	Mean time for acceleration of body for X direction
+* tbodyacc-mean-y	Mean time for acceleration of body for Y direction
+* tbodyacc-mean-z	Mean time for acceleration of body for Z direction
+* tbodyacc-std-x	Standard deviation of time for acceleration of body for X direction
+* tbodyacc-std-y	Standard deviation of time for acceleration of body for Y direction
+* tbodyacc-std-z	Standard deviation of time for acceleration of body for Z direction
+* tgravityacc-mean-x	Mean time of acceleration of gravity for X direction
+* tgravityacc-mean-y	Mean time of acceleration of gravity for Y direction
+* tgravityacc-mean-z	Mean time of acceleration of gravity for Z direction
+* tgravityacc-std-x	Standard deviation of time of acceleration of gravity for X direction
+* tgravityacc-std-y	Standard deviation of time of acceleration of gravity for Y direction
+* tgravityacc-std-z	Standard deviation of time of acceleration of gravity for Z direction
+* tbodyaccjerk-mean-x	Mean time of body acceleration jerk for X direction
+* tbodyaccjerk-mean-y	Mean time of body acceleration jerk for Y direction
+* tbodyaccjerk-mean-z	Mean time of body acceleration jerk for Z direction
+* tbodyaccjerk-std-x	Standard deviation of time of body acceleration jerk for X direction
+* tbodyaccjerk-std-y	Standard deviation of time of body acceleration jerk for Y direction
+* tbodyaccjerk-std-z	Standard deviation of time of body acceleration jerk for Z direction
+* tbodygyro-mean-x	Mean body gyroscope measurement for X direction
+* tbodygyro-mean-y	Mean body gyroscope measurement for Y direction
+* tbodygyro-mean-z	Mean body gyroscope measurement for Z direction
+* tbodygyro-std-x	Standard deviation of body gyroscope measurement for X direction
+* tbodygyro-std-y	Standard deviation of body gyroscope measurement for Y direction
+* tbodygyro-std-z	Standard deviation of body gyroscope measurement for Z direction
+* tbodygyrojerk-mean-x	Mean jerk signal of body for X direction
+* tbodygyrojerk-mean-y	Mean jerk signal of body for Y direction
+* tbodygyrojerk-mean-z	Mean jerk signal of body for Z direction
+* tbodygyrojerk-std-x	Standard deviation of jerk signal of body for X direction
+* tbodygyrojerk-std-y	Standard deviation of jerk signal of body for Y direction
+* tbodygyrojerk-std-z	Standard deviation of jerk signal of body for Z direction
+* tbodyaccmag-mean	Mean magnitude of body Acc
+* tbodyaccmag-std	Standard deviation of magnitude of body Acc
+* tgravityaccmag-mean	Mean gravity acceleration magnitude
+* tgravityaccmag-std	Standard deviation of gravity acceleration magnitude
+* tbodyaccjerkmag-mean	Mean magnitude of body acceleration jerk
+* tbodyaccjerkmag-std	Standard deviation of magnitude of body acceleration jerk
+* tbodygyromag-mean	Mean magnitude of body gyroscope measurement
+* tbodygyromag-std	Standard deviation of magnitude of body gyroscope measurement
+* tbodygyrojerkmag-mean	Mean magnitude of body body gyroscope jerk measurement
+* tbodygyrojerkmag-std	Standard deviation of magnitude of body body gyroscope jerk measurement
+* fbodyacc-mean-x	Mean frequency of body acceleration for X direction
+* fbodyacc-mean-y	Mean frequency of body acceleration for Y direction
+* fbodyacc-mean-z	Mean frequency of body acceleration for Z direction
+* fbodyacc-std-x	Standard deviation of frequency of body acceleration for X direction
+* fbodyacc-std-y	Standard deviation of frequency of body acceleration for Y direction
+* fbodyacc-std-z	Standard deviation of frequency of body acceleration for Z direction
+* fbodyaccjerk-mean-x	Mean frequency of body accerlation jerk for X direction
+* fbodyaccjerk-mean-y	Mean frequency of body accerlation jerk for Y direction
+* fbodyaccjerk-mean-z	Mean frequency of body accerlation jerk for Z direction
+* fbodyaccjerk-std-x	Standard deviation frequency of body accerlation jerk for X direction
+* fbodyaccjerk-std-y	Standard deviation frequency of body accerlation jerk for Y direction
+* fbodyaccjerk-std-z	Standard deviation frequency of body accerlation jerk for Z direction
+* fbodygyro-mean-x	Mean frequency of body gyroscope measurement for X direction
+* fbodygyro-mean-y	Mean frequency of body gyroscope measurement for Y direction
+* fbodygyro-mean-z	Mean frequency of body gyroscope measurement for Z direction
+* fbodygyro-std-x	Standard deviation frequency of body gyroscope measurement for X direction
+* fbodygyro-std-y	Standard deviation frequency of body gyroscope measurement for Y direction
+* fbodygyro-std-z	Standard deviation frequency of body gyroscope measurement for Z direction
+* fbodyaccmag-mean	Mean frequency of body acceleration magnitude
+* fbodyaccmag-std	Standard deviation of frequency of body acceleration magnitude
+* fbodybodyaccjerkmag-mean	Mean frequency of body acceleration jerk magnitude
+* fbodybodyaccjerkmag-std	Standard deviation of frequency of body acceleration jerk magnitude
+* fbodybodygyromag-mean	Mean frequency of magnitude of body gyroscope measurement
+* fbodybodygyromag-std	Standard deviation of frequency of magnitude of body gyroscope measurement
+* fbodybodygyrojerkmag-mean	Mean frequency of magnitude of body gyroscope jerk measurement
+* fbodybodygyrojerkmag-std	Standard deviation frequency of magnitude of body gyroscope jerk measuremen
 
 ##Script
 1. The script downloads and unzips the dataset via download.file() and unzip()
