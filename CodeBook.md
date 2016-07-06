@@ -33,8 +33,22 @@ Jorge Luis Reyes-Ortiz, Alessandro Ghio, Xavier Parra-Llanas, Davide Anguita, Jo
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+##Variables used to clean data
 
-##Variables
+* xTrainData - data from x_train.txt
+* xTestData - data from x_test.txt
+* xMergedData - merged x data
+* yTrainData - data from y_train.txt
+* yTestData - data from y_test.txt
+* yMergedData - merged y data
+* subTrainData - data from subject_train.txt
+* subTestData - data from subject_test.txt
+* subMergedData - merged subject data
+* features - table of features from features.txt
+* extractions - mean and standard devations from features
+* xExtractions - x data for mean and std
+* dataSet - merged subject, x, and y data
+##Variables from raw data
 
 * activities	The activity performed
 * subject	Subject ID
