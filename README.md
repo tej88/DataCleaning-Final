@@ -29,3 +29,12 @@ You should create one R script called run_analysis.R that does the following.
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 Good luck!
+
+##Script
+1. The script downloads and unzips the dataset via download.file() and unzip()
+2. It merges the data into one data frame via rbind()
+3. Using grep(), the mean and standard devation are extracted
+4. The column names are cleaned
+5. Use of tolower() and gsub() to allow cleaning of names
+6. Datasets merged again
+7. A tidy data set is exported under the name tidyData.txt
