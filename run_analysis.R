@@ -46,6 +46,7 @@ names(dataSet)
 
 #creation of tidy data set with averages of each variable
 avg <- aggregate(dataSet, list(activities = dataSet$activity, subjects = 
-        dataSet$subject), mean)[, !(colnames(avg) %in% c("subject, activity"))]
+        dataSet$subject), mean)
+avg <- avg[, !(colnames(avg) %in% c("subject, activity"))]
 str(avg)
 write.table(avg, "tidyData.txt", row.names = FALSE)
